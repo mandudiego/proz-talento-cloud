@@ -19,8 +19,11 @@ def calc(n1, n2, op):
         multiplicacao = n1 * n2
         return print(f'Multiplicação: {multiplicacao}')
     elif op == 4:
-        divisao = n1 / n2
-        return print(f'Divisão: {divisao}')
+        if n2 == 0:
+            return print('Divisão por zero')
+        else: 
+            divisao = n1 / n2
+            return print(f'Divisão: {divisao}')
     else:
         return print('0')
 
